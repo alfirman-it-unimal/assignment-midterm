@@ -1,3 +1,14 @@
+:root {
+    --light-blue: #5ccdde;
+    --dark-blue: #45a7b9;
+    --main-bg:#ebeef2;
+    --almost-white:#f9f9f9;
+    --brown:#b09573;
+    --bg-nav:#454e59;
+    --text-gray:#eeeeee;
+    --bg-gray:#999;
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +26,7 @@ body{
 
 header{
     padding: 15px 0;
-    background-color: #5ccdde;
+    background-color: var(--light-blue);
 }
 
 .head{
@@ -33,37 +44,44 @@ header button{
 
 main {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 62px);
 }
 
 aside{
     flex: 1;
     color: white;
-    background: #454e59;
+    background: var(--bg-nav);
     padding: 20px 0;
 }
 
 nav ul li {
-    padding: 10px 25px;
-    opacity: .6;
-    transition: .5;
     margin-bottom: 10px;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     opacity: 1;
 }
 
-nav ul .active{
+nav ul li a{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    opacity: .6;
+    transition: .5;
+}
+
+nav ul li .active{
     background-color: white;
-    border-right: 4px solid #5ccdde;
+    border-right: 4px solid var(--light-blue);
     color: #000;
     opacity: 1;
 }
 
 section{
     flex: 4.5;
-    background-color: #ebeef2;
+    background-color: var(--main-bg);
     padding: 25px;
 }
 
@@ -101,10 +119,10 @@ section .container-card-category{
 }
 
 .card-category-title.card-bg-blue{
-    background-color: #45a7b9;
+    background-color: var(--dark-blue);
 }
 .card-category-title.card-bg-brown{
-    background-color: #b09573;
+    background-color: var(--brown);
 }
 
 .card-category-title h1{
@@ -115,14 +133,14 @@ section .container-card-category{
 
 .card-category-total{
     flex: 1;
-    background-color: #f9f9f9;
+    background-color: var(--almost-white);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .card-category-total h5{
-    background-color: #eeeeee;
+    background-color: var(--text-gray);
     padding: 5px 15px;
     border-radius: 3px;
 }
@@ -154,10 +172,10 @@ section .container-card-category{
 }
 
 .card-category-bottom .card-category-info .card-category-text span{
-    color: #45a7b9;
+    color: var(--dark-blue);
     font-weight: bold;
 }
 
 .card-category-bottom .card-category-info .card-category-text p {
-    color: #999;
+    color: var(--bg-gray);
 }
