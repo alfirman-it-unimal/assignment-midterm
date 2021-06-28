@@ -1,154 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-penduduk.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-penduduk.css" />
     <title>Data Penduduk</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-		<div class="head container">
-			<h2>SIWADES</h2>
-			<button>LOGIN</button>
-		</div>
-	</header>
+      <div class="head container">
+        <h2>SIWADES</h2>
+        <button>LOGIN</button>
+      </div>
+    </header>
     <main>
-        <aside>
-			<nav>
-				<ul>
-					<li><a href="index.html">Dashboard</a> </li>
-					<li><a class="active" href="penduduk.html">Data Penduduk</a></li>
-					<li><a href="kegiatan.html">Kegiatan</a></li> 
-					<li><a href="keuangan.html">Keuangan</a></li> 
-				</ul>
-			</nav>
-		</aside>
-        <section>
-            <div class="container-penduduk">
-                <h3>DATA KELUARGA</h3>
-                <div class="container-main">
-                    <button id="add-button">Tambah data keluarga</button>
-                    <table>
-                        <thead>
-                            <tr id="tr-1" >
-                                <th colspan="6">
-                                    <select name="view">
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                    <div id="search">
-                                        <input placeholder="cari keluarga ..." type="search" name="search-input" id="search-input">
-                                        <button><i class="fas fa-search"></i></button>
-                                    </div>
-                                </th>
-                            </tr>
-                            <tr>
-                                <th class="text-center">NO</th>
-                                <th>NIK</th>
-                                <th>NAMA KEPALA KELUARGA</th>
-                                <th>RT/RW</th>
-                                <th>JUMLAH KELUARGA</th>
-                                <th class="text-center">OPSI</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-center">1</td>
-                                <td>12312</td>
-                                <td>BAMBANG</td>
-                                <td>01 / 02</td>
-                                <td>5 orang</td>
-                                <td class="option">
-                                    <button id="view"><i class="far fa-eye"></i></button>
-                                    <button id="edit"><i class="fas fa-edit"></i></button>
-                                    <button id="remove"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">2</td>
-                                <td>12312</td>
-                                <td>BAMBANG</td>
-                                <td>01 / 02</td>
-                                <td>5 orang</td>
-                                <td class="option">
-                                    <button id="view"><i class="far fa-eye"></i></button>
-                                    <button id="edit"><i class="fas fa-edit"></i></button>
-                                    <button id="remove"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">3</td>
-                                <td>12312</td>
-                                <td>BAMBANG</td>
-                                <td>01 / 02</td>
-                                <td>5 orang</td>
-                                <td class="option">
-                                    <button id="view"><i class="far fa-eye"></i></button>
-                                    <button id="edit"><i class="fas fa-edit"></i></button>
-                                    <button id="remove"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">4</td>
-                                <td>12312</td>
-                                <td>BAMBANG</td>
-                                <td>01 / 02</td>
-                                <td>5 orang</td>
-                                <td class="option">
-                                    <button id="view"><i class="far fa-eye"></i></button>
-                                    <button id="edit"><i class="fas fa-edit"></i></button>
-                                    <button id="remove"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">5</td>
-                                <td>12312</td>
-                                <td>BAMBANG</td>
-                                <td>01 / 02</td>
-                                <td>5 orang</td>
-                                <td class="option">
-                                    <button id="view"><i class="far fa-eye"></i></button>
-                                    <button id="edit"><i class="fas fa-edit"></i></button>
-                                    <button id="remove"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">6</td>
-                                <td>12312</td>
-                                <td>BAMBANG</td>
-                                <td>01 / 02</td>
-                                <td>5 orang</td>
-                                <td class="option">
-                                    <button id="view"><i class="far fa-eye"></i></button>
-                                    <button id="edit"><i class="fas fa-edit"></i></button>
-                                    <button id="remove"><i class="fas fa-trash-alt"></i></button>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="6">
-                                    <span style="font-weight: bold;">1 / 6</span>
-                                    <div>
-                                        <i class="fas fa-chevron-left"></i>
-                                        <span>1</span>
-                                        <i class="fas fa-chevron-right"></i>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
-        </section>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a class="active" href="penduduk.html">Data Penduduk</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="keuangan.html">Keuangan</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <div class="container-penduduk">
+          <h3>DATA KELUARGA</h3>
+          <div class="container-main">
+            <button id="add-button">Tambah data keluarga</button>
+            <table>
+              <thead>
+                <tr id="tr-1">
+                  <th colspan="6">
+                    <select name="view">
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                    <div id="search">
+                      <input
+                        placeholder="cari keluarga ..."
+                        type="search"
+                        name="search-input"
+                        id="search-input"
+                      />
+                      <button><i class="fas fa-search"></i></button>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <th class="text-center">NO</th>
+                  <th>NIK</th>
+                  <th>NAMA KEPALA KELUARGA</th>
+                  <th>RT/RW</th>
+                  <th>JUMLAH KELUARGA</th>
+                  <th class="text-center">OPSI</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">1</td>
+                  <td>12312</td>
+                  <td>BAMBANG</td>
+                  <td>01 / 02</td>
+                  <td>5 orang</td>
+                  <td class="option">
+                    <button id="view"><i class="far fa-eye"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="remove">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">2</td>
+                  <td>12312</td>
+                  <td>BAMBANG</td>
+                  <td>01 / 02</td>
+                  <td>5 orang</td>
+                  <td class="option">
+                    <button id="view"><i class="far fa-eye"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="remove">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">3</td>
+                  <td>12312</td>
+                  <td>BAMBANG</td>
+                  <td>01 / 02</td>
+                  <td>5 orang</td>
+                  <td class="option">
+                    <button id="view"><i class="far fa-eye"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="remove">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">4</td>
+                  <td>12312</td>
+                  <td>BAMBANG</td>
+                  <td>01 / 02</td>
+                  <td>5 orang</td>
+                  <td class="option">
+                    <button id="view"><i class="far fa-eye"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="remove">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">5</td>
+                  <td>12312</td>
+                  <td>BAMBANG</td>
+                  <td>01 / 02</td>
+                  <td>5 orang</td>
+                  <td class="option">
+                    <button id="view"><i class="far fa-eye"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="remove">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="text-center">6</td>
+                  <td>12312</td>
+                  <td>BAMBANG</td>
+                  <td>01 / 02</td>
+                  <td>5 orang</td>
+                  <td class="option">
+                    <button id="view"><i class="far fa-eye"></i></button>
+                    <button id="edit"><i class="fas fa-edit"></i></button>
+                    <button id="remove">
+                      <i class="fas fa-trash-alt"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="6">
+                    <span style="font-weight: bold">1 / 6</span>
+                    <div>
+                      <i class="fas fa-chevron-left"></i>
+                      <span>1</span>
+                      <i class="fas fa-chevron-right"></i>
+                    </div>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Font Awesome js -->
-    <script src="https://kit.fontawesome.com/94e3743eb1.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/94e3743eb1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
