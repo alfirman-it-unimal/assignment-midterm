@@ -215,7 +215,7 @@ tfoot tr td{
 }
 
 tfoot tr td div{
-    display: inline-block;
+    display: inline;
     float: right;
 }
 
